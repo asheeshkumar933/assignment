@@ -1,26 +1,51 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
+ import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
+
+import {  faMagnifyingGlass ,faHeart ,faBriefcase ,faUser ,faHandsBound } from '@fortawesome/free-solid-svg-icons'
 
 export default function Header() {
     return (
         <>
         
         <header className="shadow sticky z-50 top-0">
-        <div className='bg-black  text-red-900 flex justify-evenly'>
+        <div className=' bg-black  text-red-900 flex justify-evenly'>
+                <p className=' hidden md:block'>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p className=' hidden md:block' >Lorem ipsum dolor sit amet.</p>
 
-            </div>
-            <div className='flex justify-center items-center bg-slate-50'>
-                <p>  &#x1F50E;</p>
-                 <Link to="/" className="flex items-center">
+            </div> 
+            <div className='flex justify-between  items-center gap-8 bg-slate-50'>
+                <div>
+                <Link to="/" className="p-3 ml-16">
+                <FontAwesomeIcon icon={faHandsBound}  />
+                    </Link>
+                <Link to="/" className="p-3 ml-16 md:hidden">
+                <FontAwesomeIcon icon={faHandsBound}  />
+                    </Link>
+
+                </div>
+               
+                 <Link to="/" className="p-3 ml-16">
                         <img
                             src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
                             className="mr-3 h-12"
                             alt="Logo"
                         />
                     </Link>
+                    
+                    <div  className='flex gap-6 align-middle items-center cursor-pointer '>
+                    <  FontAwesomeIcon icon={faMagnifyingGlass}  />
+                    <FontAwesomeIcon icon={faHeart} />
+                    <FontAwesomeIcon icon={faBriefcase} />
+                    <span className=' hidden md:block' ><FontAwesomeIcon icon={faUser} /></span>
+                    <select className='cursor-pointer hidden md:block' name="" id="">
+                            <option value="">ENG</option>
+                        </select>
+                    </div>
+                    
+                    
+                    
 
             </div>
             
@@ -65,6 +90,16 @@ export default function Header() {
                             </li>
                             <li>
                                 <NavLink
+                                to="/card"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Shop
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
                                 to="/about"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
@@ -93,16 +128,7 @@ export default function Header() {
                                     Github
                                 </NavLink>
                             </li>
-                            <li>
-                                <NavLink
-                                to="/github"
-                                    className={({isActive}) =>
-                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-gray-700"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-                                    }
-                                >
-                                    Github
-                                </NavLink>
-                            </li>
+                            
                             
                         </ul>
                     </div>

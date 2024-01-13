@@ -5,7 +5,8 @@ function Github() {
     // const data = useLoaderData()
     const [data, setData] = useState([])
     useEffect(() => {
-     fetch('https://api.github.com/users/hiteshchoudhary')
+     fetch('https://api.github.com/users/asheeshkumar933')
+    //  fetch('https://api.github.com/users/hiteshchoudhary')
      .then(response => response.json())
      .then(data => {
         console.log(data);
@@ -14,8 +15,8 @@ function Github() {
     }, [])
     
   return (
-    <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>Github followers: {data.followers}
-    <img src={data.avatar_url} alt="Git picture" width={300} />
+    <div className=' text-center m-4 bg-gray-600 text-white p-4 text-2xl rounded-xl'>Github followers: {data.followers}
+    <img className='rounded-xl ' src={data.avatar_url} alt="Git picture" width={300} />
     </div>
   )
 }

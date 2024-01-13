@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 
-export default function Home() {
-    return (
-        <div className="mx-auto w-full max-w-7xl">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+export default function Card() {
+  return (
+    <>
+    <div className="mx-auto w-full max-w-7xl">
+            {/* <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                         <h2 className="text-4xl font-bold sm:text-5xl">
@@ -38,9 +38,9 @@ export default function Home() {
 
             <div className="grid  place-items-center sm:mt-20">
                 <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
-            </div>
+            </div> */}
 
-            {/* <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">DISCOVER OUR PRODUCTS </h1>
+            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">DISCOVER OUR PRODUCTS </h1>
             <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nesciunt. <br />
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, aliquid voluptas!</span>
             <hr className="my-6 border-gray-400 sm:mx-auto lg:my-8" />
@@ -59,11 +59,32 @@ export default function Home() {
             </select>
             </div>
             </div>
-            <hr className="my-6 border-gray-400 sm:mx-auto lg:my-8" /> */}
+            <hr className="my-6 border-gray-400 sm:mx-auto lg:my-8" />
 
 
             {/* card */}
             
         </div>
-    );
+        <div className="w-[300px] rounded-md border">
+      <img
+        src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+        alt="Laptop"
+        className="h-[200px] w-full rounded-md object-cover"
+      />
+      <div className="p-4">
+        <h1 className="text-lg font-semibold">About Macbook</h1>
+        <p className="mt-3 text-sm text-gray-600">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, debitis?
+        </p>
+        <button
+          type="button"
+          className="mt-4 rounded-sm bg-black px-2.5 py-1 text-[10px] font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+        >
+          Read
+        </button>
+      </div>
+    </div>
+    </>
+    
+  )
 }
