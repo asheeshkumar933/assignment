@@ -6,7 +6,8 @@ export default defineConfig({
   server: {
     proxy:{
 
-      '/api': 'http://localhost:3000',
+      '/api': 'https://super-duper-winner-v6v7pg76x4r6hwqg-5174.app.github.dev/:3000',
+      
     },
 
   },
