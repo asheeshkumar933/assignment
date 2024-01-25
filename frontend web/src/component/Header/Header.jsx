@@ -8,6 +8,7 @@ import {
   faBriefcase,
   faUser,
   faHandsBound,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
@@ -30,7 +31,7 @@ export default function Header() {
               <FontAwesomeIcon icon={faHandsBound} />
             </Link>
             <Link to="/" className="p-3 ml-10 md:hidden">
-              <FontAwesomeIcon icon={faHandsBound} />
+              <FontAwesomeIcon icon={faBars} />
             </Link>
           </div>
 
