@@ -9,6 +9,7 @@ import About from './component/About/About.jsx'
 import Contact from './component/Contact/Contact.jsx'
 import Github from './component/Github/Github.jsx'
 import Card from './component/Card/Card.jsx'
+import  Filter  from './component/Filter/Filter.jsx'
 
 const router = createBrowserRouter([
   {
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "card",
-        element :<Card />
+        element :<Card/>
       }
     ]
   }

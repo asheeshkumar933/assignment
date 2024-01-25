@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white border-y">
+    <footer className="bg-black text-white border-y text-left ">
       <div className=" flex-wrap   mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="  md:flex md:justify-evenly ">
           {/* <div className="mb-6 md:mb-0">
@@ -15,9 +15,9 @@ export default function Footer() {
                             />
                         </Link>
                     </div> */}
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:gap-6 sm:grid-cols-3 ">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Resources
               </h2>
               <ul className="text-gray-500 font-medium">
@@ -34,7 +34,7 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                 Follow us
               </h2>
               <ul className="text-gray-500 font-medium">
@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h2 className="mb-10  text-sm font-semibold text-gray-900 uppercase">
+              <h2 className="mb-10  text-sm font-semibold text-white uppercase">
                 Legal
               </h2>
               <ul className="text-gray-500 font-medium mb-10">
@@ -90,7 +90,7 @@ export default function Footer() {
                       />
                     </svg>
                     <span className="sr-only">GitHub account</span>
-                  </Link>
+                  </Link> 
                   <Link to="#" className="text-gray-500">
                     <svg
                       className="w-4 h-4"
@@ -110,7 +110,7 @@ export default function Footer() {
                 </div>
               </ul>
               <div className="mb-5 text-gray-600">
-                <h1 > metamouse.com </h1>
+                <h1 className="text-white " > metamouse ACCEEPTS </h1>
               </div>
               <ul className="text-gray-500 font-medium">
                 <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
@@ -119,6 +119,7 @@ export default function Footer() {
                       className="w-4 h-4"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
+                     
                       fill="currentColor"
                       viewBox="0 0 8 19"
                     >
@@ -130,7 +131,10 @@ export default function Footer() {
                     </svg>
                     <span className="sr-only">Facebook page</span>
                   </Link>
-                  <Link to="#" className="text-gray-500">
+
+
+                  
+                  {/* <Link to="#" className="text-gray-500">
                     <svg
                       className="w-4 h-4"
                       aria-hidden="true"
@@ -141,7 +145,7 @@ export default function Footer() {
                       <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
                     </svg>
                     <span className="sr-only">Discord community</span>
-                  </Link>
+                  </Link> */}
                   <Link to="#" className="text-gray-500">
                     <svg
                       className="w-4 h-4"
